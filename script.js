@@ -24,11 +24,9 @@ function loadNewImage() {
 }
 
 function updateApiPhotoLoader() {
-    console.log("apiUrl before if statement:", apiUrl)
     if (initialPhotoLoad === 5) {
         const subsequentPhotoLoad = 30
         apiUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${subsequentPhotoLoad}`;
-        console.log("apiUrl after if statement: " + apiUrl);
     } else return
 }
 
