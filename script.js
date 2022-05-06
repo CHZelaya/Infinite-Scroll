@@ -100,4 +100,4 @@ window.addEventListener('scroll', () => {
 });
 
 // * On load
-// getPhotosFromApi();
+getPhotosFromApi();
