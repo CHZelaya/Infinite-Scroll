@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Radio+Canada:wght@300&family=Roboto:ital,wght@1,300&display=swap');
+
+
+html {
+    /** Border Box prevents the viewport width from exceeding 100%, preventing a horizontal scroll bar */
+    box-sizing: border-box;
+    background: whitesmoke;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+body {
+    margin: 0;
+    /* * VH stands for viewport height */
+    min-height: 100vh;
+    min-width: 100vw;
+    font-family: "Radio Canada", "Roboto", "Permanent Marker";
+}
+
+h1 {
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 40px;
+    letter-spacing: 2.5px;
+}
+
+/** Loader */
+.loader {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.8)
+}
+
+.loader img {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/** Image Container */
+
+.img-container {
+    margin: 10px 30%;
+}
+
+.img-container img {
+    width: 100%;
+    margin-top: 5px;
+
+}
+
+/** Media Queries : Large Smartphone */
+@media screen and (max-width:600px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    .img-container {
+        margin: 10px;
+    }
+}
